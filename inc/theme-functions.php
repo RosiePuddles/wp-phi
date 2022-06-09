@@ -510,10 +510,9 @@ if (!function_exists('lprd_preloader')) {
 		if ($preloader != 'hide'):
 			?>
 			<div class="lprd-preloader">
-				<div class="dash uno"></div>
-				<div class="dash dos"></div>
-				<div class="dash tres"></div>
-				<div class="dash cuatro"></div>
+                <div class="spinner-border" style="width: 3.5rem; height: 3.5rem;" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
 			</div>
 
 		<?php endif;
