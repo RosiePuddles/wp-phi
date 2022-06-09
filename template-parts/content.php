@@ -11,14 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('lprd--post-item'); ?>>
 
-	<?php if (has_post_thumbnail()): ?>
-		<div class="lprd--post-thumb-area">
-			<a class="lprd--post-thumb" href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail('full');?>
-			</a>
-		</div>
-	<?php endif;?>
-
 	<div class="lprd--post-content-area">
 
 		<?php
@@ -29,6 +21,13 @@
         </div>
 
 		<div class="entry-content">
+            <?php if (has_post_thumbnail()): ?>
+                <div class="col-6 float-end py-2 px-2">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail('full');?>
+                    </a>
+                </div>
+            <?php endif;?>
 			<?php
 			printf("<p>%s</p> <a href=\"%s\" class=\"lprd--post-meta-wrap text-end\">Read more ...</a>",
                 implode(
