@@ -30,10 +30,8 @@
             <?php endif;?>
 			<?php
 			printf("<p>%s</p> <a href=\"%s\" class=\"lprd--post-meta-wrap text-end\">Read more ...</a>",
-                implode(
-                    "</p>\n<p>",
-                    array_slice(preg_split("/\n+/", wp_strip_all_tags(get_the_content()), 3), 0, 2)
-                ),
+                // the excerpt should be the first 2 paras hopefully please
+                get_the_excerpt(),
                 get_the_permalink()
             );
 
