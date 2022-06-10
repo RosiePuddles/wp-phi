@@ -1812,7 +1812,7 @@ body.lprd-right-sidebar .lprd-default-page-container {
 	margin-left: 0;
 }
 
-.lprd-page .entry-content li {
+.lprd-page .entry-content li > :not(a) {
 	padding-left: 20px;
 }
 
