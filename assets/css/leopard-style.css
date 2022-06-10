@@ -41,7 +41,7 @@
 /*--------------------------------------------------------------
 # Css variables list
 --------------------------------------------------------------*/
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	:root {
 		--color-white: #ffffff;
 		--color-white-lilac: #f3f5fb;
@@ -55,7 +55,7 @@
 	}
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--color-white: #1a1a1a;
 		--color-white-lilac: #393b3d;
