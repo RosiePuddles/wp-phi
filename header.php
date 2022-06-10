@@ -28,7 +28,7 @@
 <header id="masthead" class="lprd-header-area site-header">
 	<div class="container">
 		<div class="row justify-content-between align-items-center">
-			<div class="col-lg-3 col-md-6 col-8">
+			<div class="col-lg-6 col-md-6 col-8">
 				<div class="site-branding">
 					<?php
 					if( get_theme_mod( 'custom_logo' ) ):
@@ -48,7 +48,7 @@
 			<div class="col-lg-6 col-md-6 col-4 menu-toggle-area">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
 			</div>
-			<div class="col-lg-9 col-md-12 col-12 lprd-menu-area">
+			<div class="col-lg-3 col-md-3 col-13 lprd-menu-area">
 
 				<nav id="site-navigation" class="main-navigation hidden-mobile">
 
